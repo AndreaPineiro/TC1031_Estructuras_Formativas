@@ -1,6 +1,6 @@
 # SUMA ITERATIVA
 	**Análisis de complejidad temporal**
-	El algoritmo recorre n pasos ya que usa un ciclo que va de i = 1 hasta n, incrementando +1; ysumando en 
+	El algoritmo recorre n pasos ya que usa un ciclo que va de i = 1 hasta n, incrementando +1; y sumando en 
 	cada paso el valor de i. 
 	Por lo que su complejidad es O(n) para el peor de los casos.
 
