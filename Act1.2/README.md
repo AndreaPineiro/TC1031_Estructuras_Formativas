@@ -1,5 +1,5 @@
 ## ORDENA SELECCIÓN
-	** Análisis de complejidad temporal **
+	**Análisis de complejidad temporal**
 	El primer ciclo es el que determina cuántas veces vamos a tener que recorrer todo el vector; este va desde 0 hasta n, 
 	incrementando de 1 en 1. 
 	El segundo ciclo va a recorrer cada elemento del vector que no este ya en su posición correcta. Buscará el más pequeño 
@@ -11,7 +11,7 @@
 	irnos al peor de los casos que sería O(n^2). 
 
 ## ORDENA BURBUJA
-	** Análisis de complejidad temporal **
+	**Análisis de complejidad temporal**
 	El primer ciclo de este algoritmo determina cuántas veces recorremos el vector; esto es desde n-1 (último elemento) 
 	hasta 0. Recorriendo de 1 en 1, es decir que vamos a recorrer n pasos.
 	El segundo ciclo va a recorrer todos los elementos del vector, y va a hacer swap si el elemento en el que se encuentra
@@ -22,7 +22,7 @@
 	Por lo tanto la complejidad del algoritmo es: O(n^2).
 
 ## ORDENA MERGE 
-	** Análisis de complejidad temporal **
+	**Análisis de complejidad temporal**
 	Este algoritmo tiene complejidad O(n * log(n)). 
 	La función ordenaMerge, tiene complejidad O(1) porque solo manda a llamar la función mergeSplit, que es la que va a 
 	llevar a cabo las llamadas recursivas. 
