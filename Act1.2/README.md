@@ -1,5 +1,5 @@
 ## ORDENA SELECCIÓN
-	**Análisis de complejidad temporal**
+	ANÁLISIS DE COMPLEJIDAD TEMPORAL:
 	El primer ciclo es el que determina cuántas veces vamos a tener que recorrer todo el vector; este va desde 0 hasta n, 
 	incrementando de 1 en 1. 
 	El segundo ciclo va a recorrer cada elemento del vector que no este ya en su posición correcta. Buscará el más pequeño 
@@ -11,7 +11,7 @@
 	irnos al peor de los casos que sería O(n^2). 
 
 ## ORDENA BURBUJA
-	**Análisis de complejidad temporal**
+	ANÁLISIS DE COMPLEJIDAD TEMPORAL:
 	El primer ciclo de este algoritmo determina cuántas veces recorremos el vector; esto es desde n-1 (último elemento) 
 	hasta 0. Recorriendo de 1 en 1, es decir que vamos a recorrer n pasos.
 	El segundo ciclo va a recorrer todos los elementos del vector, y va a hacer swap si el elemento en el que se encuentra
@@ -22,7 +22,7 @@
 	Por lo tanto la complejidad del algoritmo es: O(n^2).
 
 ## ORDENA MERGE 
-	**Análisis de complejidad temporal**
+	ANÁLISIS DE COMPLEJIDAD TEMPORAL:
 	Este algoritmo tiene complejidad O(n * log(n)). 
 	La función ordenaMerge, tiene complejidad O(1) porque solo manda a llamar la función mergeSplit, que es la que va a 
 	llevar a cabo las llamadas recursivas. 
@@ -35,14 +35,14 @@
 	Total: O(n * log(n)).
 
 ## BUSQUÉDA SECUENCIAL
-	** Análisis de complejidad temporal **
+	ANÁLISIS DE COMPLEJIDAD TEMPORAL:
 	El algoritmo recorre n pasos ya que usa un ciclo que va de i = 1 hasta n, incrementando +1 y recorriendo todos los 
 	elementos del vector para compararlos con el número que buscamos. 
 	Por lo que su complejidad es O(n) para el peor de los casos, en el que el número se encuentre al final o no se 
 	encuentre dentro del vector.
 
 ## BUSQUEDA BINARIA 
-	** Análisis de complejidad temporal **
+	ANÁLISIS DE COMPLEJIDAD TEMPORAL:
 	El algoritmo recorre log(n) pasos, ya que para encontrar el número en el vector no recorre todo el vector. 
 	Obtiene el número de la mitad y lo compara con el número que buscamos, si son iguales, regresamos su índice, pues 
 	ya lo hemos encontrado. Si es menor llama la función de nuevo desde low hasta mid-1; si es mayor la llama desde mid+1 
