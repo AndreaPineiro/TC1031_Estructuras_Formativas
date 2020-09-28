@@ -34,12 +34,14 @@ class Link {
 // =================================================================
 // Constructor. Initializes the value of link. The variable next 
 // (pointer) is initialized to null.
+// Complexity O(1)
 // =================================================================
 template <class T>
 Link<T>::Link(T val) : value(val), next(0) {}
 
 // =================================================================
 // Constructor. Initializes the value of link and the value of next.
+// Complexity O(1)
 // =================================================================
 template <class T>
 Link<T>::Link(T val, Link* nxt) : value(val), next(nxt) {}
@@ -70,12 +72,14 @@ class List {
 
 // =================================================================
 // Constructor. Initializes both variables to zero.
+// Complexity O(1)
 // =================================================================
 template <class T>
 List<T>::List() : head(0), size(0) {}
 
 // =================================================================
 // Destructor. Remove all items from the list.
+// Complexity O(1) It only calls the clear function.
 // =================================================================
 template <class T>
 List<T>::~List(){
@@ -86,6 +90,7 @@ List<T>::~List(){
 // Adds an Link object to the list on the last position. It receives
 // an object.
 // The function doesn't return anything.
+// Complexity O(n)
 // =================================================================
 template <class T>
 void List<T>::add(T val) throw (OutOfMemory) {
@@ -117,6 +122,7 @@ void List<T>::add(T val) throw (OutOfMemory) {
 // Search an element of the list, by comparing each element with 
 // the one received
 // The function returns the postion of the element
+// Complexity O(n)
 // =================================================================
 template <class T>
 int List<T>::find(T val) {
@@ -137,6 +143,7 @@ int List<T>::find(T val) {
 // =================================================================
 // Updates the value of an element in the list, with the one received.
 // The function doesn't return anything
+// Complexity O(n)
 // =================================================================
 template <class T>
 void List<T>::update(int index, T val) throw (IndexOutOfBounds) {
@@ -160,7 +167,8 @@ void List<T>::update(int index, T val) throw (IndexOutOfBounds) {
 
 // =================================================================
 // It receives an index and removes the element in that position.
-// The function doesn't return anything.
+// The function returns the object removed.
+// Complexity O(n)
 // =================================================================
 template <class T>
 T List<T>::remove(int index) throw (IndexOutOfBounds){
@@ -197,6 +205,7 @@ T List<T>::remove(int index) throw (IndexOutOfBounds){
 // Removes every element on the list.
 // The function doesn't receive or return anything. It is used in the 
 // destructor.
+// Complexity O(n)
 // =================================================================
 template <class T>
 void List<T>::clear() {
@@ -216,6 +225,7 @@ void List<T>::clear() {
 // =================================================================
 // String representation of the elements in the list. The function 
 // returns a string with the values of the elements
+// Complexity O(n)
 // =================================================================
 template <class T>
 std::string List<T>::toString() const {
