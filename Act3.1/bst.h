@@ -152,7 +152,6 @@ int Node<T>::height() const {
 	} else {
 		return level_left;
 	}
-	//return (level_right > level_left) ? level_right : level_left;
 }
 
 
