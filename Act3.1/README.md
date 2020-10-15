@@ -37,14 +37,15 @@
 	Complejidad: O(n)
 
 
-## CLEAR
+## ANCESTORS
 	** Análisis de complejidad temporal **
 	La función busca el elemento del cual queremos obtener sus ancestros con la misma lógica de los anteriores algoritmos; 
 	moviendose a la izqueirda o derecha dependiendo del valor a buscar. 
 	Al encontrar el elemento tenemos que recorrer cada uno de sus padres, esto lo hacemos llamando de nuevo a la función 
 	de ancestros para recorrer desde el nodo hasta la raíz. 
 	Para el peor de los casos tendremos el mismo problema mencionado anteriormente, que todos los elementos se encuentren 
-	de un solo lado al buscar el objeto, y si queremos desplegar los ancestros de el elemento en el nivel más bajo con este caso tendremos una 
+	de un solo lado al buscar el objeto, y si queremos desplegar los ancestros de el elemento en el nivel más bajo con este 
+	caso tendremos una 
 	Complejidad de O(n)
 
 
@@ -70,13 +71,15 @@
 	** Análisis de complejidad temporal **
 	La función imprime todos los nodos comenzando con el del último último nivel a la izquierda izquierda, luego sube e 
 	imprime los hijos de la derecha comenzando por el que esta en el nivel más bajo.
-	Para este algoritmo, si recorremos todos los elementos dentro del árbol usando una función recursiva para cada nodo que visitamos.
+	Para este algoritmo, si recorremos todos los elementos dentro del árbol usando una función recursiva para cada 
+	nodo que visitamos.
 	Complejidad de O(n)
 
 
 ## LEVELBYLEVEL
 	** Análisis de complejidad temporal **
-	La función imprime todos los nodos de cada nivel; comenzando por los que están en el primer nivel, luego con el segundo
-	nivel hasta llegar al último.
-	Para este algoritmo, si recorremos todos los elementos dentro del árbol usando una función recursiva para cada nodo que visitamos.
+	La función imprime todos los nodos de cada nivel; comenzando por los que están en el primer nivel, luego con el 
+	segundo nivel hasta llegar al último.
+	Para este algoritmo, si recorremos todos los elementos dentro del árbol usando una función recursiva para cada 
+	nodo que visitamos.
 	Complejidad de O(n)
