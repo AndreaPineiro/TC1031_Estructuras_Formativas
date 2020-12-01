@@ -6,6 +6,6 @@ Tercer Semestre
 ITC
 
 
-# Correcciones
+## Correcciones en actividades
 
 No se agregaron correcciones
